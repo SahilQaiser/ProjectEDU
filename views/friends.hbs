@@ -1,0 +1,19 @@
+<section id="about" class="about">
+{{#if friend}}
+    <div class="container">
+        {{friend.name}}
+        {{friend.age}}
+        {{friend.favColor}}
+    </div>
+{{/if}}
+
+{{#if friends}}
+    {{#each friends}}
+        <div class="container">
+            {{name}}
+            {{age}}
+            {{favColor}}
+        </div>
+    {{/each}}
+{{/if}}
+</section>
